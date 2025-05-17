@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid and Flexbox Layout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+            <style>
+        @media (max-width: 768px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body class="p-4">
+    <header class="bg-blue-500 text-white p-4">
+        <h1 class="text-3xl">Grid and Flexbox Layout</h1>
+    </header>
+
+    <main class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-4 min-h-screen">
+        <section class="lg:col-span-2 flex">
+            <div class="p-4 bg-red-200 w-1/2">Flexbox Item 1</div>
+            <div class="p-4 bg-red-400 w-1/2">Flexbox Item 2</div>
+        </section>
+        <aside class="bg-green-200 p-4">Sidebar</aside>
+    </main>
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-2 mt-3">
+        <img src="https://i.pinimg.com/736x/0c/fe/b0/0cfeb061f0f466fdc48f06797cfff849.jpg" alt="Cozy study desk setup" class="w-full h-52 object-cover rounded-md">
+        <img src="https://i.pinimg.com/736x/68/ce/44/68ce44e7176cd170c92a2293bf234988.jpg" alt="Laptop on a couch" class="w-full h-52 object-cover rounded-md">
+        <img src="https://i.pinimg.com/736x/64/aa/fd/64aafd150155345706f8dbff74401bbe.jpg" alt="A laptop on outdoor terrace" class="w-full h-52 object-cover rounded-md">
+        <img src="https://i.pinimg.com/736x/0c/fe/b0/0cfeb061f0f466fdc48f06797cfff849.jpg" alt="Cozy study desk setup" class="w-full h-52 object-cover rounded-md">
+        <img src="https://i.pinimg.com/736x/68/ce/44/68ce44e7176cd170c92a2293bf234988.jpg" alt="Laptop on a coach" class="w-full h-52 object-cover rounded-md">
+        <img src="https://i.pinimg.com/736x/64/aa/fd/64aafd150155345706f8dbff74401bbe.jpg" alt="A laptop on outdoor terrace" class="w-full h-52 object-cover rounded-md">
+        <img src="https://i.pinimg.com/736x/0c/fe/b0/0cfeb061f0f466fdc48f06797cfff849.jpg" alt="Cozy study desk setup" class="w-full h-52 object-cover rounded-md">
+        <img src="https://i.pinimg.com/736x/68/ce/44/68ce44e7176cd170c92a2293bf234988.jpg" alt="Laptop on a coach" class="w-full h-52 object-cover rounded-md">
+        <img src="https://i.pinimg.com/736x/64/aa/fd/64aafd150155345706f8dbff74401bbe.jpg" alt="A laptop on outdoor terrace" class="w-full h-52 object-cover rounded-md">
+    </section>
+
+    <footer class="bg-gray-800 text-white p-4 mt-4">
+        <p>&copy; 2024 Tracy Njoroges's Blog</p>
+    </footer>
+</body>
+</html>
